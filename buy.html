@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Buy Form</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Home - Furnid</title>
+</head>
+
+<body>
+    <nav class="fixed">
+        <label class="brand-title">Furnid</label>
+        <img src="assets/nav-icon.png" alt="" class="nav-icon" onclick="toggleSideNav();">
+    </nav>
+
+    <div class="sidenav" id="sidenav">
+        <div><img src="assets/close-icon.png" alt="" class="close-icon" onclick="toggleSideNav();">Furnid</div>
+        <a href="index.html" class="link">Home</a>
+        <a href="chairs.html" class="link">Chairs</a>
+        <a href="desks.html" class="link">Desks</a>
+        <a href="paintings.html" class="link">Paintings</a>
+    </div>
+
+    <div class="background-content">
+        <div class="content dim-purple">
+            <form action="#" id="buy-form" onsubmit="successBuy();">
+                <div class="title">Fill In Your Data</div>
+                <div class="row">
+                    <div class="col-40">
+                        <label for="name" class="label-form">Full Name</label> 
+                    </div>
+                    <div class="col-60">
+                        <input type="text" name="name" id="name" class="custom-input" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40">
+                        <label for="address" class="label-form">Address</label> 
+                    </div>
+                    <div class="col-60">
+                        <input type="text" name="address" id="address" class="custom-input" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40">
+                        <label for="email" class="label-form">Email</label> 
+                    </div>
+                    <div class="col-60">
+                        <input type="email" name="email" id="email" class="custom-input" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40">
+                        <label for="phone" class="label-form">Phone Number</label> 
+                    </div>
+                    <div class="col-60">
+                        <input type="text" name="phone" id="phone" class="custom-input" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40">
+                        <label for="qty" class="label-form">Quantity Product</label> 
+                    </div>
+                    <div class="col-60">
+                        <input type="number" name="qty" id="qty" class="custom-input" required>
+                    </div>
+                </div>
+                <input type="submit" value="Buy Now" class="btn btn-submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.instagram.com/sebastii.an/" target="_blank"><img src="assets/instagram.png" alt="IG" class="social-icon"></a>
+        <a href="https://twitter.com/jennys_frost" target="_blank"><img src="assets/twitter.png" alt="TW" class="social-icon"></a>
+    </footer>
+</body>
+
+</html>
+</body>
+</html>

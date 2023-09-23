@@ -1,0 +1,280 @@
+@font-face {
+    font-family: sanchez;
+    src: url('../assets/Sanchez-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sanchez;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #FFFFFA;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 6px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#buy-form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #FFFFFA;
+    border-radius: 100px;
+    padding: 40px;
+    color: #5256BC;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.label-form {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.sidenav {
+    display: none;
+    position: fixed;
+    background-color: #3A3E98;
+    top: 0;
+    right: 0;
+    margin: 0;
+    overflow: auto;
+    text-align: right;
+    height: 100%;
+    z-index: 99;
+}
+
+.sidenav a, .sidenav div {
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    cursor: pointer;
+}
+
+.sidenav a:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+.sidenav div {
+    font-size: 30px;
+    background-color: #3A3E98;
+    color: white;
+}
+
+.sidenav a:visited {
+    color: white;
+}
+
+.close-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    filter: invert();
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+.brand-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 51px;
+    margin-left: 55px;
+}
+
+.nav-icon {
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+    float: right;
+    cursor: pointer;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 10;
+}
+
+.content {
+    padding: 40px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.dim-purple {
+    background-color: rgba(82, 86, 188, 0.9);
+}
+
+.dim-green {
+    background: rgba(45, 128, 88, 0.9);
+}
+
+.background-content {
+    background-image: url('../assets/background.jpg');
+}
+
+.tagline {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 110px;
+    text-align: center;
+    color: #FFFFFA;
+    text-shadow: 7px 7px 12px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #FFFFFA;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+}
+
+.social-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0px 50px;
+    cursor: pointer;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    padding: 20px 50px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 28px;
+    border: 0;
+    font-family: sanchez !important;
+}
+
+.btn-submit {
+    background: rgba(59, 167, 115, 0.9);
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.items {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.items-description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    transition: ease-in-out 300ms;
+    opacity: 0;
+}
+
+.items:hover .items-description {
+    opacity: 1;
+}
+
+@media (max-width: 980px) {
+    .tagline {
+        width: 90%;
+        font-size: 40px;
+        line-height: 80px;
+    }
+    .grid-container {
+        display: block;
+    }
+    .items {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+    #buy-form {
+        max-width: 100%;
+    }
+    .row {
+        display: block;
+    }
+    .col-40, .col-50, .col-60 {
+        width: 100%;
+    }
+    .label-form {
+        width: 100%;
+    }
+    .btn {
+        padding: 14px;
+        width: 100%;
+    }
+}
